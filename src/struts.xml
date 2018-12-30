@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="tj" namespace="/" extends="struts-default">
+
+		<!--  <default-action-ref name="index" />-->
+
+		<global-results>
+			<result name="error">/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+
+		<action name="user_*" class="cn.com.tj.byhy.action.UserAction"
+			method="{1}">
+			<result name="loginS">/admin.jsp</result>
+			<result name="loginF">/User/login.jsp</result>
+			<result name="adminshow">/User/admin_main_showuser.jsp</result>
+			<result name="usermassage">/User/user_massage.jsp</result>
+			<result name="usermassagemodify">/User/user_massage_modify.jsp</result>
+			<result name="userpwdmodify">/User/user_massage_pswmodify.jsp</result>
+			<result name="domodifyS">/User/user_massage.jsp</result>
+			<result name="userpswmodifyS">/User/user_massage.jsp</result>
+			<result name="userpswmodifyF">/User/user_massage_pswmodify.jsp</result>
+			<!--  <result name="allUserS">/User/users.jsp</result>-->
+			<result name="usernamecheck">/User/register.jsp</result>
+			<result name="toadduser">/User/adduser.jsp</result>
+			<result name="allUserByPageSX">/User/users.jsp</result>
+			<result name="keysearchSX">/User/users_key_search.jsp</result>
+			<result name="adminusermassagemodify">/User/admin_user_massage.jsp</result>
+			<result name="adminusermassageS">/User/admin_user_massage.jsp</result>
+			<result name="adminroot">/User/admin_user_root.jsp</result>
+			<result name="adminrootS">/User/admin_user_root.jsp</result>
+			<result name="logoutSX">/index.jsp</result>
+			<result name="orderlist">/orderlist.jsp</result>
+			
+			<result name="tologin">/loginhint.jsp</result>
+			<result name="alluserbypage" type="redirectAction">user_allUserByPage.action?errowMesg=${errowMesg}
+			</result>
+			
+			<result name="namaluserloginS">/index.jsp</result><!-- 普通用户 登录成功后跳转前台  -->
+			
+		</action>
+		
+		
+		<action name="usercustom_*" class="cn.com.tj.byhy.action.UsercustomAction"
+			method="{1}">
+			<result name="cus_index">/index.jsp</result><!-- 注册成功后跳转前台  -->
+			<result name="cusmassage">/Usercustom/cus_massage.jsp</result><!--跳转到普通用户信息 -->
+			<result name="cusmassagemodify">/Usercustom/cus_massage_modify.jsp</result>
+			<result name="domodifyS">/Usercustom/cus_massage.jsp</result>
+			<result name="domodifyF">/Usercustom/cus_massage.jsp</result>
+			<result name="cuspwdmodify">/Usercustom/cus_massage_pswmodify.jsp</result>
+			<result name="cuspswmodifyS">/Usercustom/cus_massage.jsp</result>
+			<result name="cuspswmodifyF">/Usercustom/cus_massage.jsp</result>
+			<result name="trolley">/Usercustom/trolley.jsp</result>
+			<result name="orderlist">/Usercustom/ordertable.jsp</result>
+			<result name="showorder" type="redirectAction">usercustom_orderlist?errowMesg=${errowMesg}</result>
+			<result name="showtrolley" type="redirectAction">usercustom_trolley?errowMesg=${errowMesg}</result>
+			<result name="cus_login">/User/login.jsp</result>
+			
+			
+			<result name="tologin">/loginhint.jsp</result>
+			<result name="keysearchSX">/User/users_key_search.jsp</result>
+		</action>
+		<action name="loginAjax_*" class="cn.com.tj.byhy.action.LoginAjaxAction"
+			method="{1}">
+		</action>
+		<action name="trolleyAjax_*" class="cn.com.tj.byhy.action.TrolleyAjaxAction"
+			method="{1}">
+		</action>
+
+		<action name="production_*" class="cn.com.tj.byhy.action.ProductionAction"
+			method="{1}">
+			<result name="allproductionSX">/Production/productions.jsp</result>
+			<result name="addSX" type="redirectAction">production_allProductionByPage?errowMesg=${errowMesg}</result>
+			<result name="singleSX">/Production/production_detail.jsp</result>
+			<result name="toupdateSX">/Production/production_modify.jsp</result>
+			<result name="deleteSX" type="redirectAction">production_allProductionByPage?errowMesg=${errowMesg}</result>
+			<result name="updateSX" type="redirectAction">production_allProductionByPage?errowMesg=${errowMesg}</result>
+			<result name="keysearchSX">/Production/productions_key_search.jsp</result>
+			<result name="toadd">/Production/production_add.jsp</result>
+			
+			
+			<result name="tologin">/loginhint.jsp</result>
+			
+			<result name="toaddpicture">/Production/production_addpicture.jsp</result>
+			<result name="addpictureSX" type="redirectAction">production_allProductionByPage?errowMesg=${errowMesg}</result>
+
+		</action>
+		<action name="nomalquestion_*" class="cn.com.tj.byhy.action.NomalquestionAction"
+			method="{1}">
+			<result name="allquestionSX">/Question/questions.jsp</result>
+			<result name="addSX" type="redirectAction">nomalquestion_allnomalquestionByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="singleSX">/Question/question_detail.jsp</result>
+			<result name="toupdateSX">/Question/question_modify.jsp</result>
+			<result name="deleteSX" type="redirectAction">nomalquestion_allnomalquestionByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="updateSX" type="redirectAction">nomalquestion_allnomalquestionByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="keysearchSX">/Question/questions_key_search.jsp</result>
+			<result name="tologin">/loginhint.jsp</result>
+		</action>
+		<action name="service_product_*" class="cn.com.tj.byhy.action.Service_ProductAction"
+			method="{1}">
+			<result name="allservice_productSX">/service/suportservices.jsp</result>
+			<result name="addSX" type="redirectAction">service_product_allservice_productByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="singleSX">/service/suportservice_detail.jsp</result>
+			<result name="toupdateSX">/service/suportservice_modify.jsp</result>
+			<result name="deleteSX" type="redirectAction">service_product_allsservice_productByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="updateSX" type="redirectAction">service_product_allservice_productByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="keysearchSX">/service/suportservices_key_search.jsp</result>
+			<result name="toaddpicture">/service/suportservice_addpicture.jsp</result>
+			<result name="addpictureSX" type="redirectAction">service_product_allservice_productByPage?errowMesg=${errowMesg}</result>
+			
+			<result name="tologin">/loginhint.jsp</result>
+			
+		</action>
+		<action name="ordertable_*" class="cn.com.tj.byhy.action.OrdertableAction"
+			method="{1}">
+			<result name="allordertableSX">/Ordertable/ordertables.jsp</result>
+			<result name="receorderSX" type="redirectAction">ordertable_allordertableByPage?flag=${flag}
+			</result>
+			<result name="unorderSX" type="redirectAction">ordertable_allordertableByPage?flag=${flag}
+			</result>
+			<result name="downorderSX" type="redirectAction">ordertable_allordertableByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="addSX" type="redirectAction">ordertable_allordertableByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="singleSX">/Ordertable/ordertable_detail.jsp</result>
+			
+			
+			
+			<result name="toupdateSX">/Ordertable/ordertable_modify.jsp</result>
+			<result name="deleteSX" type="redirectAction">ordertable_allordertableByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="updateSX" type="redirectAction">ordertable_allordertableByPage?errowMesg=${errowMesg}
+			</result>
+			<result name="keysearchSX">/Ordertable/ordertable_key_search.jsp</result>
+			<result name="tologin">/loginhint.jsp</result>
+		</action>
+		<action name="search_*" class="cn.com.tj.byhy.action.SearchAction"
+			method="{1}">
+			<result name="searchproductionSX">/home/production_key_search.jsp</result>
+			<result name="searchquestionSX">/home/questions_key_search.jsp</result>
+			<result name="searchservice_productSX">/home/serviceproduct_key_search.jsp</result>
+			
+			
+			<result name="ProductionSX">/home/activities.jsp</result>
+			<result name="questionSX">/home/questions.jsp</result>
+			<result name="suportserviceSX">/home/suportservices.jsp</result>
+			<result name="singleProductionSX">/home/Production_detail.jsp</result>
+			<result name="singleQuestionSX">/home/question_detail.jsp</result>
+			<result name="singleServiceSX">/home/suportservice_detail.jsp</result>
+		</action>
+		
+		
+		<action name="mainpage_*" class="cn.com.tj.byhy.action.MainpageAction"
+			method="{1}">
+			<result name="getproductionSX">/homemain.jsp</result>
+			<result name="businessSX">/home/business.jsp</result>
+			<result name="indexSX">/home/homeindex.jsp</result>
+			
+			<result name="singleservice_productSX">/home/serviceproductdetail.jsp</result>
+			<result name="singleproductionSX">/home/productiondetail.jsp</result>
+			
+			<result name="keysearchproductionSX">/Production/productions_key_search.jsp</result>
+			<result name="keysearchservice_productSX">/service/suportservices_key_search.jsp</result>
+			
+			
+			
+			<result name="allproductionSX">/Production/productions.jsp</result>
+			<result name="allservice_productSX">/service/suportservices.jsp</result>
+		</action>
+		
+		<action name="validate_*" class="cn.com.tj.byhy.action.ValidateAction"
+			method="{1}">
+			<result name="sendEmailsuccess">/home/contacts.jsp</result>
+		</action>
+	</package>
+	<include file="example.xml" />
+
+	<!-- Add packages here -->
+
+</struts>

@@ -1,0 +1,109 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,image,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+/*end reset*/
+/****-----start-body #0091e6----****/
+body{
+	background-image: url(../images/bg.jpg);
+	color: #eee;
+}
+.main{
+    margin:auto;
+    width: 300px;
+    height:345px;
+}
+
+h1 {
+    font-size: 2.4em;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 28px;
+    color: #0091e6;
+    text-align: center;
+}
+.login{
+	padding:2em 0;
+}
+.inset {
+	position:relative;
+    padding: 2.5em;
+    background: rgba(255, 255, 255, 0.1);
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	    box-shadow: 0px 0px 15px #545454;
+}
+form span {
+    display: block;
+    font-size: .9em;
+    color: #0091e6;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="text"],input[type="Password"],table input{
+    padding: 9px;
+    width: 93.4%;
+    font-size: 1.1em;
+    margin: 3px 0px 25px;
+    color: #666666;
+    background: #f0f0f0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+}
+input[type="text"]:hover,input[type="Password"]:hover,#active{
+	border:none;
+	outline:none;
+}
+.sign {
+    text-align: center;
+}
+.sign input{
+	height:30px;
+	weight:55px;
+	margin:5px;
+	border:none;
+	color:#f0f0f0;
+	background-color:#1DC51D; 
+}
+.sign input:HOVER {
+	color: #0091e6;
+	background-color:#A0A5A0;
+}
+lable{
+	color:#eee;
+	
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate//Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<!-- 连接user表 -->
+	<class name="cn.com.tj.byhy.model.User" table="user">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" not-null="true" />
+			<generator class="native" />
+		</id>
+		<property name="username" type="string">
+			<column name="username" not-null="true" unique="true"/>
+		</property>
+		<property name="password" type="string">
+			<column name="password" not-null="true" />
+		</property>
+		<property name="realName" type="string">
+			<column name="realName" not-null="true" />
+		</property>
+		<property name="state" type="int">
+			<column name="state" not-null="true" />
+		</property>
+		<property name="phone" type="string">
+			<column name="phone" not-null="true" />
+		</property>
+		<property name="mail" type="string">
+			<column name="mail" not-null="true" />
+		</property>
+		<!-- user与user_type的关联,column充当外键的字段名,class被关联的类的名字, cascade="all"主控类所有操作，对关联表也执行同样的操作 
+			unique="true" 唯一性约束，实现一对一 -->
+		<many-to-one name="type" column="typeid" not-null="true"
+			class="cn.com.tj.byhy.model.User_type" lazy="false" cascade="all" />
+		<!-- user与Order的关系   关联的外键 -->
+		<set name="orderSet" lazy="false">
+			<key column="userid"></key>  
+			<one-to-many class="cn.com.tj.byhy.model.Ordertable"></one-to-many>
+		</set> 
+		<set name="trolleySet" lazy="false">
+			<key column="userid"></key>  
+			<one-to-many class="cn.com.tj.byhy.model.Trolley"></one-to-many>
+		</set> 
+	</class>
+</hibernate-mapping>

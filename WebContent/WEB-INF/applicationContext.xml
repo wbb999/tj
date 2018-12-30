@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/jdbc
+http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<context:component-scan base-package="cn.com.tj.byhy">
+	</context:component-scan>
+
+	<!-- 配置数据源 -->
+	<bean id="dataSource" destroy-method="close"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/tj?useUnicode=true" /><!-- 数据库名 -->
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 定义映射文件 -->
+		<property name="mappingResources">
+			<list>
+				<value>cn/com/tj/byhy/model/User.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/User_type.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Ordertable.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Order_state.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Orderlist.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Trolley.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Service_Product.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Service_Product_type.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Production.hbm.xml</value>
+				<value>cn/com/tj/byhy/model/Nomalquestion.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop><!-- 每次启动项目时，自动匹配数据库内的字段 -->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="userDaoImpl" name="userDaoImpl" class="cn.com.tj.byhy.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="productionDaoImpl" name="productionDaoImpl" class="cn.com.tj.byhy.dao.impl.ProductionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="service_productDaoImpl" name="service_productDaoImpl" class="cn.com.tj.byhy.dao.impl.Service_ProductDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="nomalquestionDaoImpl" name="nomalquestionDaoImpl" class="cn.com.tj.byhy.dao.impl.NomalquestionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ordertableDaoImpl" name="ordertableDaoImpl" class="cn.com.tj.byhy.dao.impl.OrdertableDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="orderlistDaoImpl" name="orderlistDaoImpl" class="cn.com.tj.byhy.dao.impl.OrderlistDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="trolleyDaoImpl" name="trolleyDaoImpl" class="cn.com.tj.byhy.dao.impl.TrolleyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>

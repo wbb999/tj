@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate//Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<!-- 连接user表 -->
+	<class name="cn.com.tj.byhy.model.Trolley" table="trolley">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" not-null="true" />
+			<generator class="native" />
+		</id>
+		<property name="amount" type="int">
+			<column name="amount" not-null="true" />
+		</property>
+		<!-- trolley与user的关联,column充当外键的字段名,class被关联的类的名字, cascade="all"主控类所有操作，对关联表也执行同样的操作 
+			unique="true" 唯一性约束，实现一对一 -->
+		<many-to-one name="user" column="userid" not-null="true"
+			class="cn.com.tj.byhy.model.User" lazy="false" cascade="all" />
+		<!-- trolley与service_product的关联,column充当外键的字段名,class被关联的类的名字, cascade="all"主控类所有操作，对关联表也执行同样的操作 
+			unique="true" 唯一性约束，实现一对一 -->
+		<many-to-one name="service_product" column="serv_proid" not-null="true"
+			class="cn.com.tj.byhy.model.Service_Product" lazy="false" cascade="all" />
+		
+	</class>
+</hibernate-mapping>

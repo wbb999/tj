@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate//Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<!-- 连接nomalquestion表 -->
+	<class name="cn.com.tj.byhy.model.Nomalquestion" table="nomalquestion">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" not-null="true" />
+			<generator class="native" />
+		</id>
+		<property name="question" type="string">
+			<column name="question" not-null="true"/>
+		</property>
+		<property name="answer" type="string">
+			<column name="answer" not-null="true" />
+		</property>
+		<property name="account" type="int">
+			<column name="account" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

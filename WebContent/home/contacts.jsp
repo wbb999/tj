@@ -243,14 +243,14 @@ h2.under {
 						<h2 class="under">联系我们</h2>
 						<div id="address">
 							<span>国家<br> 城市:<br> 电话:<br> E-mail:
-							</span> 中国<br> 天津<br> +01-182********<br> <a
+							</span> 中国<br> 南京<br> +01-182********<br> <a
 								href="mailto:" class="color2">test_nju_edu2@163.com</a>
 						</div>
 						<div style="margin-bottom:0px;">
 						<span style="float:left">微信：</span><img src="images/wechat.png" width="150px" height="150px"/>
 						</div>
 						<h2 class="under" style="margin-top:0px;">Other Introduction</h2>
-						<p>公司地址：天津市********道8号</p>
+						<p>公司地址：南京市********道8号</p>
 					</div>
 				</div>
 			</div>

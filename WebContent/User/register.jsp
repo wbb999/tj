@@ -290,7 +290,7 @@ function checkname(value) { // 输入框失去焦点
 <body>
 	<br />
 	<br />
-	<h1 style="margin: 0; padding: 0">天津博宇鸿雁文化传媒有限公司</h1>
+	<h1 style="margin: 0; padding: 0">文化传媒有限公司</h1>
 	<div class="main">
 		<div class="login">
 			<div class="inset">

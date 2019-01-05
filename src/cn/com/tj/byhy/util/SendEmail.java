@@ -52,14 +52,6 @@ public class SendEmail {
 	        InternetAddress to = new InternetAddress(toMail);
 	        message.setRecipient(RecipientType.TO, to);
 
-	        // 设置抄送
-//	        InternetAddress cc = new InternetAddress("1641751910@qq.com");
-//	        message.setRecipient(RecipientType.CC, cc);
-
-	        // 设置密送，其他的收件人不能看到密送的邮件地址
-//	        InternetAddress bcc = new InternetAddress("aaaaa@163.com");
-//	        message.setRecipient(RecipientType.CC, bcc);
-
 	        // 设置邮件标题
 	        message.setSubject("客户反馈信息");
 
@@ -114,16 +106,9 @@ public class SendEmail {
 	        InternetAddress to = new InternetAddress(toMail);
 	        message.setRecipient(RecipientType.TO, to);
 
-	        // 设置抄送
-//	        InternetAddress cc = new InternetAddress("1641751910@qq.com");
-//	        message.setRecipient(RecipientType.CC, cc);
-
-	        // 设置密送，其他的收件人不能看到密送的邮件地址
-//	        InternetAddress bcc = new InternetAddress("aaaaa@163.com");
-//	        message.setRecipient(RecipientType.CC, bcc);
 
 	        // 设置邮件标题
-	        message.setSubject("天津博宇鸿雁文化传媒有限公司:订单通知信息");
+	        message.setSubject("文化传媒有限公司:订单通知信息");
 
 	        // 设置邮件的内容体
 	      //设置信件内容
@@ -154,7 +139,7 @@ public class SendEmail {
 		System.out.println("sendMail4");
 		message.setRecipient(Message.RecipientType.TO, new InternetAddress(toMail));//设置收件人,并设置其接收类型为TO
 		System.out.println("sendMail5");
-		message.setSubject("天津博宇鸿雁文化传媒有限公司:客户反馈信息");//设置标题
+		message.setSubject("文化传媒有限公司:客户反馈信息");//设置标题
 		System.out.println("sendMail6");
 		//设置信件内容
 		String con="";

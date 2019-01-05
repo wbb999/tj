@@ -207,7 +207,7 @@ body,div,h1,ul,a,li,center {
 
 		<div id="Copyright">
 			Copyright 2015.All Rights Reserved 版权所有 **文化传媒有限公司<br />
-			地址：天津市***道8号 &nbsp; 联系电话：029-8365**** &nbsp; 闫经理：186********
+			地址：南京市***道8号 &nbsp; 联系电话：029-8365**** &nbsp; 闫经理：186********
 			&nbsp; 李经理：136******** &nbsp; 传真：029-8365****
 		</div>
 	</center>

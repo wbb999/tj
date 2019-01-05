@@ -186,7 +186,7 @@ text-decoration:none; font-size:12px;}
 		<div style="height: 30px; width: 100%"></div>
 		<div id="header-bottom">
 			<h1>
-				<a href="indextest.jsp" id="logoa">天津博宇鸿雁文化传媒有限公司</a>
+				<a href="indextest.jsp" id="logoa">文化传媒有限公司</a>
 			</h1><br/><br/>
 			<div>
 				<ul>
@@ -218,9 +218,9 @@ text-decoration:none; font-size:12px;}
 
 
 		<div id="Copyright">
-			Copyright 2015.All Rights Reserved 版权所有 天津博宇鸿雁文化传媒有限公司<br />
-			地址：天津市武清区徐官屯街江源道4号 &nbsp; 联系电话：029-83658860 &nbsp; 闫经理：18602943481
-			&nbsp; 李经理：13630257906 &nbsp; 传真：029-83658860
+			Copyright 2015.All Rights Reserved 版权所有 ******文化传媒有限公司<br />
+			地址：南京市*****4号 &nbsp; 联系电话：029-8365****  &nbsp; 闫经理：1860294****   &nbsp; 李经理：1363025****
+			 &nbsp; 传真：029-8365****
 		</div>
 	</center>
 <script type="text/javascript" src="js/jquery.js"></script>

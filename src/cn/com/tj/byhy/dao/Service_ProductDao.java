@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import cn.com.tj.byhy.model.Service_Product;
 
 /**
- * 2016/4/4
+ * 2018/12/25
  * @author wubeibei
  * @see Service_ProductDao接口
  */

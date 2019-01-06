@@ -19,7 +19,7 @@ import cn.com.tj.byhy.util.Pager;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * 2016.4.6
+ * 2019.1.6
  * @author wubeibei
  * @see 主页搜索栏
  */

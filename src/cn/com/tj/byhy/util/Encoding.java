@@ -10,9 +10,9 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
 /**
- * 2015/12/12
+ * 2018/12/12
  * Servlet Filter implementation class Encoding
- * @author xuwei
+ * @author wubeibei
  */
 @WebFilter("/*")//所有请求
 public class Encoding implements Filter {

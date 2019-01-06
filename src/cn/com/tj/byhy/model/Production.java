@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class Production {
 	/**
-	 * 2016/4/4
+	 * 2018/12/25
 	 * @author wubeibei
 	 * @see 历史活动信息表
 	 */

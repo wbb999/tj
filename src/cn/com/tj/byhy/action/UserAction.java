@@ -28,7 +28,7 @@ import cn.com.tj.byhy.util.Pager;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * 2016/1/11
+ * 2018/12/30
  * @author wubeibei
  * @see User增删改查、登陆
  */

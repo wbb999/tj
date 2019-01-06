@@ -10,7 +10,7 @@ import cn.com.tj.byhy.model.Service_Product;
 import cn.com.tj.byhy.service.Service_ProductService;
 
 /**
- * 2016/4/4
+ * 2018/12/25
  * @author wubeibei
  * @see  所有对用户Service_Product处理的服务/产品处理层 ，对获取的信息处理分配后调用相应的dao层实现类
  */

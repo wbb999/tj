@@ -17,7 +17,7 @@ import cn.com.tj.byhy.util.PictureUpload;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * 2016/4/4
+ * 2018/12/25
  * @see 作品相关的action
  * @author wubeibei
  *

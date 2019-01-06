@@ -8,7 +8,7 @@ import cn.com.tj.byhy.model.Nomalquestion;
 @Scope("singleton")
 @Service("nomalquestionService")
 /**
- * 2016/4/4
+ * 2018/12/25
  * @author wubeibei
  * @see Nomalquestionservice服务层接口
  */

@@ -10,7 +10,7 @@ import cn.com.tj.byhy.dao.OrderlistDao;
 import cn.com.tj.byhy.model.Orderlist;
 import cn.com.tj.byhy.service.OrderlistService;
 /**
- * 2016/4/30
+ * 2018/12/30
  * @author wubeibei
  * @see  所有对用户Orderlist处理的服务处理层 ，对获取的信息处理分配后调用相应的dao层实现类
  */

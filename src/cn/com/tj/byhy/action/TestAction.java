@@ -26,7 +26,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * 
  * 商品Action对象
  * 
- * @author DB 2016年4月8日
+ * @author DB 2019年1月8日
  */
 @Scope("request")
 @Controller("testAction")

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import cn.com.tj.byhy.util.SendEmail;
 
 /**
- * 2016/4/7
+ * 2018/12/25
  * @see 邮件联系我们的Action
  * @Scope("request")
  * @author wubeibei

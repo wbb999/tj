@@ -8,7 +8,7 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import cn.com.tj.byhy.dao.OrderlistDao;
 import cn.com.tj.byhy.model.Orderlist;
 /**
- * 2016/1/11
+ * 2018/12/30
  * @author wubeibei
  * @see Orderlist 增 删 改 查  以及各类查询的实现
  *

@@ -14,7 +14,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * 
  * 图片上传
  * 
- * @author wubeibei 2016/5/6
+ * @author wubeibei 2019/1/6
  */
 public class PictureUpload extends ActionSupport {
 	

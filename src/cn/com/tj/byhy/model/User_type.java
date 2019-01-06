@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class User_type{
 	/**
-	 * 2016/4/28
+	 * 2019/1/2
 	 * @author wubeibei
 	 * @see 用户类型信息表
 	 */

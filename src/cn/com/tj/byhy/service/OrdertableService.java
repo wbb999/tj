@@ -10,7 +10,7 @@ import cn.com.tj.byhy.model.Ordertable;
 @Scope("singleton")
 @Service("ordertableService")
 /**
- * 2016/4/30
+ * 2018/12/30
  * @author wubeibei
  * @see service服务层接口
  */

@@ -2,7 +2,7 @@ package cn.com.tj.byhy.model;
 
 public class Nomalquestion {
 	/**
-	 * 2016/4/4
+	 * 2018/12/25
 	 * @author wubeibei
 	 * @see 常见问题信息表
 	 */

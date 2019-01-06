@@ -11,7 +11,7 @@ import cn.com.tj.byhy.model.User;
 import cn.com.tj.byhy.service.UserService;
 
 /**
- * 2016/2/24
+ * 2018/12/24
  * @author wubeibei
  * @see  所有对用户user处理的服务处理层 ，对获取的信息处理分配后调用相应的dao层实现类
  */

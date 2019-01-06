@@ -10,7 +10,7 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import cn.com.tj.byhy.dao.Service_ProductDao;
 import cn.com.tj.byhy.model.Service_Product;
 /**
- * 2016/4/4
+ * 2018/12/25
  * @author wubeibei
  * @see Service_Product 增 删 改 查  以及各类查询的实现
  *

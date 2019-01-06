@@ -16,7 +16,7 @@ import cn.com.tj.byhy.service.UserService;
 
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * 2016.4.4
+ * 2018.12.25
  * @author wubeibei
  * @see Ajax动态交互
  */

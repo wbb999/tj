@@ -18,7 +18,7 @@ import cn.com.tj.byhy.util.PictureUpload;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * 2016/4/30
+ * 2018/12/30
  * @author wubeibei
  * @see service_product增删改查
  */

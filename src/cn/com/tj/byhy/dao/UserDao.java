@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import cn.com.tj.byhy.model.User;
 
 /**
- * 2016/1/11
+ * 2018/12/30
  * @author wubeibei
  * @see UserDao接口
  */

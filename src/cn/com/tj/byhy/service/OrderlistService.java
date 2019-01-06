@@ -10,7 +10,7 @@ import cn.com.tj.byhy.model.Orderlist;
 @Scope("singleton")
 @Service("orderlistService")
 /**
- * 2016/2/24
+ * 2018/12/24
  * @author wubeibei
  * @see service服务层接口
  */

@@ -11,7 +11,7 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import cn.com.tj.byhy.dao.OrdertableDao;
 import cn.com.tj.byhy.model.Ordertable;
 /**
- * 2016/4/30
+ * 2018/12/30
  * @author wubeibei
  * @see Ordertable 增 删 改 查  以及各类查询的实现
  *

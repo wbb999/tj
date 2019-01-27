@@ -147,7 +147,7 @@ body,div,h1,ul,a,li,center {
 			<ul class="menu">
 				<li><a href="search_question" target="main">帮助</a></li>
 				<li>|</li>
-				<li><a href="home/contacts.jsp" target="main">联系我们</a></li>
+				<li><a href="home/contacts.jsp" target="main">联系我们啊</a></li>
 				<c:if test="${oneuser.username!=null}">
 				<li>|</li>
 				<li><a href="usercustom_trolley" target="main">购物车</a></li>

@@ -95,7 +95,7 @@ text-decoration:none; font-size:12px;}
 		</div>
 		<div class="nav-menu">
 			<ul class="menu">
-				<li>服务热线:029-83658860</li>
+				<li>服务热线:025-83658860</li>
 				<li>|</li>
 				<li class="stmenu">
 					<h3>
@@ -161,8 +161,8 @@ text-decoration:none; font-size:12px;}
 
 		<div id="Copyright">
 			Copyright 2015.All Rights Reserved 版权所有 文化传媒有限公司<br />
-			地址：南京市***4号 &nbsp; 联系电话：029-8365*** &nbsp; 闫经理：1860294****
-			&nbsp; 李经理：1363025**** &nbsp; 传真：029-8365****
+			地址：南京市***4号 &nbsp; 联系电话：025-8365*** &nbsp; 闫经理：1860254****
+			&nbsp; 李经理：1363025**** &nbsp; 传真：025-8365****
 		</div>
 	</center>
 <script type="text/javascript" src="js/jquery.js"></script>

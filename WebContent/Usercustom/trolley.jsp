@@ -340,13 +340,13 @@ b input {
 					</c:if>
 					<s:iterator value="#request.trolleylist" id="exa" status="num">
 						<tr style="height: 100px;">
-							<td onclick="checkprice()"><input type="checkbox"
+							<td onclick="checkprice()" style="height: 100px;"><input type="checkbox"
 								id="proids" name="proids" checked="checked" value="${exa.id}"
 								onchange="checkprice()" onmouseover="checkprice()"
 								onclick="checkprice()" /> <input type="hidden"
 								id="price${exa.id}" name="price${exa.id}"
 								value="${exa.service_product.price}" /></td>
-							<td width="130px"><img src="${exa.service_product.picture }"
+							<td width="130px" height="100px"><img src="${exa.service_product.picture }"
 								class="imgstyle"></td>
 							<td><a
 								href="mainpage_singleservice_product?service_product.id=${exa.service_product.id}">【${exa.service_product.name}】<s:if

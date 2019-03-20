@@ -202,7 +202,7 @@ b input {
 											status="num">
 											<tr style="height: 100px;">
 												<td width="40px"></td>
-												<td width="130px"><img
+												<td width="130px" height="100px"><img
 													src="${exae.service_product.picture }" class="imgstyle"></td>
 												<td width="730px"><a href="mainpage_singleservice_product?service_product.id=${exae.service_product.id}">【${exae.service_product.name}】<s:if
 															test="%{null!=#exae.service_product.intro&&#exae.service_product.intro.length()>20}">
